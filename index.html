@@ -71,11 +71,9 @@
 
   <title>CollabASM - Narita et al. | Academic Research</title>
 
-  <!-- Favicon and App Icons -->
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
   <link rel="apple-touch-icon" href="static/images/favicon.ico">
 
-  <!-- Critical CSS -->
   <link rel="stylesheet" href="static/css/bulma.min.css">
   <link rel="stylesheet" href="static/css/index.css">
 
@@ -99,41 +97,247 @@
   <script defer src="static/js/bulma-carousel.min.js"></script>
   <script defer src="static/js/bulma-slider.min.js"></script>
   <script defer src="static/js/index.js"></script>
+</head>
 
-  <!-- Structured Data for Academic Papers -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "ScholarlyArticle",
-    "headline": "CollabASM: A Novel Benchmark Dataset for Human-Human and Human-Robot Collaborative Shelf Assembly Tasks",
-    "description": "CollabASM is the first benchmark dataset capturing both human-human and human-robot collaborative shelf assembly, with full-body and finger motion, ego/allocentric video, and multi-level annotations.",
-    "author": [
-      { "@type": "Person", "name": "Tetsuya Narita", "affiliation": { "@type": "Organization", "name": "The University of Tokyo" } },
-      { "@type": "Person", "name": "Ryo Umagami", "affiliation": { "@type": "Organization", "name": "The University of Tokyo" } },
-      { "@type": "Person", "name": "Ryuto Fukushima", "affiliation": { "@type": "Organization", "name": "The University of Tokyo" } },
-      { "@type": "Person", "name": "Xuangeng Chu", "affiliation": { "@type": "Organization", "name": "The University of Tokyo" } },
-      { "@type": "Person", "name": "Yusuke Mukuta", "affiliation": { "@type": "Organization", "name": "The University of Tokyo" } },
-      { "@type": "Person", "name": "Tomoyuki Takahata", "affiliation": { "@type": "Organization", "name": "Tokyo Denki University" } },
-      { "@type": "Person", "name": "Tatsuya Harada", "affiliation": { "@type": "Organization", "name": "The University of Tokyo / RIKEN AIP" } }
-    ],
-    "datePublished": "2027-01-01",
-    "publisher": { "@type": "Organization", "name": "WACV 2027" },
-    "url": "https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE",
-    "image": "https://YOUR_DOMAIN.com/static/images/social_preview.png",
-    "keywords": ["collaborative motion", "human-robot interaction", "motion prediction", "furniture assembly", "benchmark dataset", "computer vision"],
-    "abstract": "Collaborative motion is crucial in daily life and industrial contexts, especially for complex, long-horizon tasks. This study introduces CollabASM: a benchmark dataset for human-human and human-robot collaborative shelf assembly tasks that captures motion and sensory information for both types of collaboration.",
-    "isAccessibleForFree": true,
-    "license": "https://creativecommons.org/licenses/by/4.0/",
-    "mainEntity": { "@type": "WebPage", "@id": "https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE" },
-    "about": [
-      { "@type": "Thing", "name": "Human-Robot Collaboration" },
-      { "@type": "Thing", "name": "Human Motion Prediction" }
-    ]
-  }
-  </script>
+<body>
 
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "The University
+  <!-- Scroll to Top Button -->
+  <button class="scroll-to-top" onclick="scrollToTop()" title="Scroll to top" aria-label="Scroll to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <main id="main-content">
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">CollabASM: A Novel Benchmark Dataset for Human-Human and Human-Robot Collaborative Shelf Assembly Tasks</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- TODO: 各著者の個人ページURLがあれば href に追記してください -->
+              <span class="author-block">
+                <a href="#" target="_blank">Tetsuya Narita</a><sup>1</sup>,</span>
+              <span class="author-block">
+                <a href="#" target="_blank">Ryo Umagami</a><sup>1</sup>,</span>
+              <span class="author-block">
+                <a href="#" target="_blank">Ryuto Fukushima</a><sup>1</sup>,</span>
+              <span class="author-block">
+                <a href="#" target="_blank">Xuangeng Chu</a><sup>1</sup>,</span>
+              <span class="author-block">
+                <a href="#" target="_blank">Yusuke Mukuta</a><sup>1</sup>,</span>
+              <span class="author-block">
+                <a href="#" target="_blank">Tomoyuki Takahata</a><sup>2</sup>,</span>
+              <span class="author-block">
+                <a href="#" target="_blank">Tatsuya Harada</a><sup>1,3</sup>
+              </span>
+            </div>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block"><sup>1</sup>The University of Tokyo&nbsp;&nbsp;<sup>2</sup>Tokyo Denki University&nbsp;&nbsp;<sup>3</sup>RIKEN AIP<br>WACV 2027</span>
+            </div>
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <!-- TODO: arXiv ID が確定したらURLを更新してください -->
+                <span class="link-block">
+                  <a href="static/pdfs/paper.pdf" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+                </span>
+
+                <!-- TODO: Supplementary PDF のパスを確認してください -->
+                <span class="link-block">
+                  <a href="static/pdfs/supplementary_material.pdf" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Supplementary</span>
+                </a>
+                </span>
+
+                <!-- TODO: GitHubリポジトリURLを更新してください -->
+                <span class="link-block">
+                  <a href="https://github.com/YOUR_REPO_HERE" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                </a>
+                </span>
+
+                <!-- TODO: arXiv ID が確定したらURLを更新してください -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/YOUR_ARXIV_ID" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Paper abstract -->
+  <section class="section hero is-light">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              Collaborative motion is crucial in daily life and industrial contexts, especially for complex, long-horizon tasks. Despite advances in autonomous agents collaborating with characters in virtual environments and humanoids in the real world, achieving seamless collaboration remains a challenge. A major obstacle is developing models that accurately predict human or character behaviors while considering mutual influences to optimize task performance. Many existing datasets for training human motion prediction models focus only on individual behaviors and lack scalability for collaborative tasks, with few supporting the transition from human-human to human-robot collaboration.
+            </p>
+            <p>
+              This study introduces CollabASM: a benchmark dataset for human-human and human-robot collaborative shelf assembly tasks that captures motion and sensory information for both types of collaboration. The dataset includes detailed human and robot motions, finger motions, allocentric and egocentric videos, and multi-level task annotations. It covers the assembly and disassembly of 14 furniture items and 5 composite variations. Our experiments demonstrate the dataset's utility as a scalable benchmark for transitioning from human-human to human-robot collaboration under a teleoperated setup.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End paper abstract -->
+
+    <!-- Teaser / Figure section -->
+  <section class="hero teaser">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <!-- TODO: ティーザー動画または代表図のパスを設定してください -->
+        <img src="static/images/teaser.png" alt="CollabASM dataset capture environment" loading="lazy"/>
+        <h2 class="subtitle has-text-centered">
+          CollabASM captures both Human-Human and Human-Robot collaborative shelf assembly, including full-body motion, finger motion, egocentric/allocentric RGB-D video, and multi-level task annotations.
+        </h2>
+      </div>
+    </div>
+  </section>
+  <!-- End teaser -->
+
+  <!-- Key Features / Contributions -->
+  <section class="section hero is-light">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Key Features</h2>
+          <div class="content has-text-justified">
+            <p>CollabASM is the first corpus that simultaneously satisfies all of the following key properties:</p>
+            <ul>
+              <li><strong>Long-horizon assembly tasks</strong> — assembly and disassembly of 14 furniture items and 5 composite variations.</li>
+              <li><strong>Full finger-inclusive joint motion tracking</strong> — captured via tracking gloves integrated with motion capture.</li>
+              <li><strong>Multi-level action and task annotations</strong> — three levels of abstraction (fine-grained action labels, furniture-specific task labels, and common task labels).</li>
+              <li><strong>Paired Human-Human (H-H) and Human-Robot (H-R) execution conditions.</strong></li>
+              <li><strong>Identical tasks performed across both interaction modes.</strong></li>
+            </ul>
+            <p>
+              The dataset comprises <strong>401 recorded sequences</strong> (<strong>25 hours</strong> total; 18.1 hours H-H and 6.9 hours H-R) with synchronized, multimodal signals: full-body motion capture, finger motion via tracking gloves, multi-view allocentric RGB-D, egocentric RGB, robot joint and end-effector trajectory, and robot egocentric video. H-R interactions are SpaceMouse-teleoperated, providing a baseline for human-in-the-loop teleoperation and enabling future autonomous policy learning.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End key features -->
+
+  <!-- Image carousel -->
+  <section class="hero is-small">
+    <div class="hero-body">
+      <div class="container">
+        <div id="results-carousel" class="carousel results-carousel">
+          <div class="item">
+            <!-- TODO: 実際の図に差し替えてください -->
+            <img src="static/images/carousel1.jpg" alt="Dataset capture environment" loading="lazy"/>
+            <h2 class="subtitle has-text-centered">
+              Capture environment for Human-Human and Human-Robot interactions.
+            </h2>
+          </div>
+          <div class="item">
+            <img src="static/images/carousel2.jpg" alt="Furniture items used for the dataset" loading="lazy"/>
+            <h2 class="subtitle has-text-centered">
+              14 furniture items (including one hammock) and 5 composite tasks.
+            </h2>
+          </div>
+          <div class="item">
+            <img src="static/images/carousel3.jpg" alt="Dataset modalities" loading="lazy"/>
+            <h2 class="subtitle has-text-centered">
+              Multimodal signals: allocentric/egocentric video, motion capture, and multi-level annotations.
+            </h2>
+          </div>
+          <div class="item">
+            <img src="static/images/carousel4.jpg" alt="Motion prediction results" loading="lazy"/>
+            <h2 class="subtitle has-text-centered">
+              Qualitative results of collaborative motion prediction.
+            </h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End image carousel -->
+
+  <!-- Youtube video (任意: 動画がなければこのセクションごと削除可) -->
+  <section class="hero is-small is-light">
+    <div class="hero-body">
+      <div class="container">
+        <h2 class="title is-3">Video Presentation</h2>
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <div class="publication-video">
+              <!-- TODO: YouTube の動画IDに差し替えてください -->
+              <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End youtube video -->
+
+  <!-- BibTeX citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <div class="bibtex-header">
+        <h2 class="title">BibTeX</h2>
+        <button class="copy-bibtex-btn" onclick="copyBibTeX()" title="Copy BibTeX to clipboard">
+          <i class="fas fa-copy"></i>
+          <span class="copy-text">Copy</span>
+        </button>
+      </div>
+      <pre id="bibtex-code"><code>@inproceedings{Narita2027CollabASM,
+  title={CollabASM: A Novel Benchmark Dataset for Human-Human and Human-Robot Collaborative Shelf Assembly Tasks},
+  author={Narita, Tetsuya and Umagami, Ryo and Fukushima, Ryuto and Chu, Xuangeng and Mukuta, Yusuke and Takahata, Tomoyuki and Harada, Tatsuya},
+  booktitle={Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)},
+  year={2027}
+}</code></pre>
+    </div>
+  </section>
+  <!-- End BibTeX citation -->
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+            <p>
+              This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+              You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
