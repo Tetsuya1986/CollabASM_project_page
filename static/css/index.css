@@ -275,7 +275,15 @@ body {
   box-shadow: var(--shadow-lg);
 }
 
-.results-carousel .item img,
+.results-carousel .item img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: 450px;
+  object-fit: contain;
+  margin: 0 auto;
+}
+
 .results-carousel video {
   margin: 0;
   border-radius: var(--border-radius);
